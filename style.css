@@ -14,7 +14,7 @@ a {
 }
 
 img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -23,11 +23,11 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 159;
+  --hue: 205;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --base-color: hsl(var(--hue) 60% 45%);
+  --base-color-second: hsl(var(--hue) 89% 76%);
+  --base-color-alt: hsl(var(--hue) 81% 41%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
@@ -54,6 +54,12 @@ body {
 }
 
 .title {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+.subtitle {
   font: 700 var(--title-font-size) var(--title-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
@@ -143,7 +149,7 @@ body {
 
 /*====  LOGO ============================ */
 .logo {
-  font: 700 1.31rem var(--title-font);
+  font: 700 1.5rem var(--title-font);
   color: var(--title-color);
 }
 
@@ -273,17 +279,18 @@ nav.show div.icon-close {
 #home .image::before {
   content: '';
   height: 100%;
-  width: 100%;
+  width: 80%;
   background: var(--base-color-second);
   position: absolute;
-  top: -16.8%;
-  left: 16.7%;
+  top: -25%;
+  left: 9%;
   z-index: 0;
 }
 
 #home .image img {
   position: relative;
-  right: 2.93rem;
+  top: -15%;
+  right: -1rem;
 }
 
 #home .image img,
@@ -305,20 +312,20 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
-/*====  ABOUT ============================ */
-#about {
+/*====  ELECTRIC ============================ */
+#electric {
   background: white;
 }
 
-#about .container {
+#electric .container {
   margin: 0;
 }
 
-#about .image {
+#electric .image {
   position: relative;
 }
 
-#about .image::before {
+#electric .image::before {
   content: '';
   height: 100%;
   width: 100%;
@@ -329,94 +336,71 @@ nav.show div.icon-close {
   z-index: 0;
 }
 
-#about .image img {
+#electric .image img {
   position: relative;
 }
 
-#about .image img,
-#about .image::before {
+#electric .image img,
+#electric .image::before {
   border-radius: 0.25rem;
 }
 
-#about .text {
+#electric .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
-/*====  SERVICES ============================ */
-.cards.grid {
-  gap: 1.5rem;
+/* swiper */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
 }
 
-.card {
-  padding: 3.625rem 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: 0.25rem solid var(--base-color);
-  border-radius: 0.25rem 0.25rem 0 0;
-  text-align: center;
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
-.card i {
-  display: block;
-  margin-bottom: 1.5rem;
-  font-size: 5rem;
-  color: var(--base-color);
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
 }
 
-.card .title {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-}
-
-/*====  TESTIMONIALS ============================ */
-#testimonials {
+/*====  MECHANICS ============================ */
+#mechanics {
   background: white;
 }
 
-#testimonials .container {
-  margin-left: 0;
-  margin-right: 0;
+#mechanics .container {
+  margin: 0;
 }
 
-#testimonials header {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  margin-bottom: 0;
+#mechanics .image {
+  position: relative;
 }
 
-#testimonials blockquote {
-  padding: 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+#mechanics .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+}
+
+#mechanics .image img {
+  position: relative;
+}
+
+#mechanics .image img,
+#mechanics .image::before {
   border-radius: 0.25rem;
 }
 
-#testimonials blockquote p {
-  position: relative;
-  text-indent: 1.875rem;
-  margin-bottom: 1.5rem;
-  color: var(--title-color);
-}
-
-#testimonials blockquote p span {
-  font: 700 2.5rem serif;
-  position: absolute;
-  top: -0.375rem;
-  left: -1.875rem;
-  color: var(--base-color);
-}
-
-#testimonials cite {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-}
-
-#testimonials cite img {
-  width: 2rem;
-  height: 2rem;
-  object-fit: cover;
-  clip-path: circle();
-  margin-right: 0.5rem;
+#mechanics .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 /* swiper */
@@ -441,12 +425,6 @@ nav.show div.icon-close {
 
 #contact .text p {
   margin-bottom: 2rem;
-}
-
-#contact .button i,
-#contact ul li i {
-  font-size: 1.5rem;
-  margin-right: 0.625rem;
 }
 
 #contact ul.grid {
@@ -602,26 +580,10 @@ footer .social a:hover {
     text-align: left;
   }
 
-  /* about */
-  #about .container {
+  /* electric */
+  #electric .container {
     margin: 0 auto;
     grid-auto-flow: column;
-  }
-
-  /* services */
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .card {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  /* testimonials */
-  #testimonials .container {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   /* contact */
