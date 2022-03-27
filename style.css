@@ -523,6 +523,60 @@ nav.show div.icon-close {
 .swiper-pagination-bullet-active {
   background: var(--base-color);
 }
+
+/*====  CAD ============================ */
+#cad {
+  background: white;
+}
+
+#cad .container {
+  margin: 0;
+}
+
+#cad .image {
+  position: relative;
+}
+
+#cad .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+}
+
+#cad .image img {
+  position: relative;
+}
+
+#cad .image img,
+#cad .image::before {
+  border-radius: 0.25rem;
+}
+
+#cad .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* swiper */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
+
 /*====  CONTACT ============================ */
 #contact .grid {
   gap: 4rem;
@@ -705,6 +759,12 @@ footer .social a:hover {
 
   /* programming */
   #programming .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  /* cad */
+  #cad .container {
     margin: 0 auto;
     grid-auto-flow: column;
   }
