@@ -418,6 +418,111 @@ nav.show div.icon-close {
   background: var(--base-color);
 }
 
+/*====  AWARDS ============================ */
+#awards {
+  background: white;
+}
+
+#awards .container {
+  margin: 0;
+}
+
+#awards .image {
+  position: relative;
+}
+
+#awards .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+}
+
+#awards .image img {
+  position: relative;
+}
+
+#awards .image img,
+#awards .image::before {
+  border-radius: 0.25rem;
+}
+
+#awards .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* swiper */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
+
+/*====  PROGRAMMING ============================ */
+#programming {
+  background: white;
+}
+
+#programming .container {
+  margin: 0;
+}
+
+#programming .image {
+  position: relative;
+}
+
+#programming .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+}
+
+#programming .image img {
+  position: relative;
+}
+
+#programming .image img,
+#programming .image::before {
+  border-radius: 0.25rem;
+}
+
+#programming .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* swiper */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
 /*====  CONTACT ============================ */
 #contact .grid {
   gap: 4rem;
@@ -582,6 +687,24 @@ footer .social a:hover {
 
   /* electric */
   #electric .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  /* mechanics */
+  #mechanics .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  /* awards */
+  #awards .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  /* programming */
+  #programming .container {
     margin: 0 auto;
     grid-auto-flow: column;
   }
