@@ -59,7 +59,7 @@ scrollReveal.reveal(
   `#home .image, #home .text,
   #electric .image, #electric .text,
   #mechanics .image, #mechanics .text,
-  #awards .image, #awards .text
+  #awards .image, #awards .text,
   #programming .image, #programming .text,
   #project .image, #project .text,
   footer .brand, footer .social
